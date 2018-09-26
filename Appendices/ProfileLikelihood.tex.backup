@@ -1,0 +1,23 @@
+\chapter{Profile likelihood ratio test}\label{app:likelihood}
+\lhead{\emph{Appendix: Profile likelihood ratio test}}
+The neutrino floor is calculated as a discovery limit which are mapped according to the application of the profile likelihood ratio test on simulated experiments. The profile likelihood ratio statistic corresponds to a hypothesis test between the null hypothesis $H_0$ (background only) and the alternative hypothesis $H_1$ which includes both background and signal, incorporating systematic uncertainties in this case the normalization of the neutrino fluxes. As we are interested in the WIMP discovery potential of future experiments, we test the background only hypothesis, $H_0$, on simulated data and try to reject it using the following likelihood ratio,
+\begin{equation}
+\lambda(0) = \frac{\mathscr{L}(\sigma_{\chi-n} = 0,\hat{\hat{\boldsymbol{\Phi}}})}{\mathscr{L}(\hat{\sigma}_{\chi-n},\hat{\boldsymbol{\Phi}})},
+\end{equation}
+where  ${\hat{\boldsymbol{\Phi}}}$ and $\hat{\sigma}_{\chi-n}$ denotes the values of ${\boldsymbol{\Phi}}$ and $\sigma_{\chi-n}$ that maximize the unconditional $\mathscr{L}$ and  
+$\hat{\hat{\boldsymbol{\Phi}}}$ denotes the values of ${\boldsymbol{\Phi}}$ that maximize $\mathscr{L}$ under the condition $\sigma_{\chi-n} = 0$, i.e., we are profiling over the parameters in  ${\boldsymbol{\Phi}}$ which are considered to be nuisance parameters. As discussed in Ref.~\cite{Cowan:2010js}, the test statistic $q_0$ is then defined as,
+\begin{equation}
+q_0 = \left\{
+\begin{array}{rrll}
+\rm & -2\ln\lambda(0)	&	\ \hat{\sigma}_{\chi-n} > 0 \,, \\
+\rm & 0  		& 	\ \hat{\sigma}_{\chi-n} < 0. 
+\end{array}\right.
+\end{equation}
+A large value for this statistic implies that the alternative hypothesis gives a better fit to the data,  i.e., that it contains a WIMP signal.
+The $p$-value, $p_0$, of a particular experiment is the probability of finding a value of $q_0$ larger than or equal to the observed value, $q_0^{\rm obs}$, if the null (background only) hypothesis is correct:
+\begin{equation}
+p_0 = \int_{q_0^{\rm obs}}^{\infty} f(q_0|H_0) \, {\rm d} q_0, 
+\end{equation}
+where $f(q_0|H_0)$ is the probability distribution function of $q_0$ under the background only hypothesis. Following Wilk's theorem, $q_0$ asymptotically follows a $\chi^2$ distribution with one degree of freedom (see Ref.~\cite{Cowan:2010js} for a more detailed discussion) and therefore the significance $Z$ in units of standard deviation is simply given by $Z = \sqrt{q^{\rm obs}_0}$. The discovery limit for a particular input WIMP mass can then be found by finding the minimum cross-section for which 90\% of the simulated experiments have $Z \geq 3$. For calculations of the neutrino floor we typically build a distributions for $Z$ based on 5000 Monte Carlo experiments.
+
+This analysis methodology was first introduced by the XENON10 collaboration~\cite{Aprile:2011hx} and many experiments are now using similar likelihood approaches e.g.,  LUX~\cite{Akerib:2013tjd}, CDMS-II~\cite{Billard:2013gfa,Agnese:2014xye}, and CoGeNT~\cite{Aalseth:2014jpa}. This has become possible thanks to the construction of accurate background models derived from reliable simulations, as well as data-driven analysis techniques based on calibration data. The advantage of using likelihood analyses is that they can not only determine whether or not a dark matter interpretation to the data is preferred and a WIMP signal detected, but they can also measure or constrain the WIMP parameters themselves. Furthermore a likelihood analysis will maximize the sensitivity to the dark matter signal and obtain the best possible limits for a given experiment. 

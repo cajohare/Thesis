@@ -1,0 +1,51 @@
+\chapter{Spherical statistics}\label{app:dirstats}
+\lhead{\emph{Appendix: Spherical statistics}}
+
+Here we describe two statistical tests for use on spherical data that we introduce in Sec.~\ref{sec:directional_nonparametric} to test for the existence of streams.
+
+{\bf The median direction}, $\hat{\textbf{x}}_\textrm{med}$, of a set of directions, $\lbrace \hat{\textbf{x}}_i,\, ...\, , \hat{\textbf{x}}_N\rbrace$, is found by minimising the quantity \cite{fisher1987statistical},
+\begin{equation}
+      M = \sum_{i=1}^{N} \cos^{-1}(\hat{\textbf{x}}_\textrm{med} \cdot \hat{\textbf{x}}_i) \, .
+\end{equation}
+To test whether or not some set of directions are consistent with a hypothesised median direction, $\hat{\textbf{x}}_0$, we must extract a statistic from the data which, if the hypothesis of the median direction being $\hat{\textbf{x}}_0$ is true, is distributed according to some known distribution. The test is performed as follows \cite{fisher1987statistical}. First the recoil vectors $\hat{\textbf{x}}_i$ are rotated so that they are measured relative to a north pole at the sample median given by $(\theta_\textrm{med},\phi_\textrm{med}$). After the recoil vectors have been rotated, the azimuthal angles $\phi_i'$ are then measured in this new co-ordinate system. We then construct the matrix,
+\begin{equation}
+      \Sigma = \frac{1}{2}
+      \begin{pmatrix}
+	      \sigma_{11} & \sigma_{12} \\
+	      \sigma_{21} & \sigma_{22}
+      \end{pmatrix}\, ,
+\end{equation}
+where,
+\begin{eqnarray}
+      \sigma_{11} &=& 1 + \frac{1}{N}\sum_{i=1}^{N} \cos 2\phi_i' \\
+      \sigma_{22} &=& 1 - \frac{1}{N}\sum_{i=1}^{N} \cos 2\phi_i' \\
+      \sigma_{12} &=& \sigma_{21} = \frac{1}{N}\sum_{i=1}^{N} \sin \phi_i'.
+\end{eqnarray}
+Next, the recoil vectors are rotated again but now so that they are measured relative to a north pole at the hypothesised median direction $(\theta_0,\phi_0)$. Then by defining,
+\begin{equation}
+      U = \frac{1}{\sqrt{N}} 
+      \begin{pmatrix}
+	      \sum \cos \phi_i^0 \\
+	      \sum \sin \phi_i^0
+      \end{pmatrix},
+\end{equation}
+the test statistic can be calculated as,
+\begin{equation}
+      \chi^2 = U^T \Sigma^{-1} U \, ,
+\end{equation}
+and is distributed according to a $\chi^2_2$ distribution in the case where the hypothesised median direction is correct and $N>25$. The statistical significance of a particular value of $\chi^2_\textrm{obs}$ in relation to the null hypothesis is then the cumulative distribution function for $\chi^2_2$ at $\chi^2_\textrm{obs}$ according to Eq. (\ref{eq:significance}).
+
+{\bf The modified Kuiper test} is a test for rotational symmetry around some hypothesised direction $\hat{\textbf{x}}_0$. The test is performed by first rotating all recoil direction vectors $\hat{\textbf{x}}_i$ so that their spherical angles $(\theta_i,\phi_i)$ are measured relative to a north pole with angles $(\theta_0,\phi_0)$ prior to rotation. After the recoil vectors have been rotated, the azimuthal angles $\phi_i$ are then measured in this new co-ordinate system in units of $2\pi$, reorganised in ascending order and denoted $X_i$ such that they define points in a cumulative distribution $F(X)$. In the case that the data possess rotational symmetry the cumulative distribution follows $F(X) = X$. The modified Kuiper statistic quantifies deviations from this and is defined,
+\begin{equation}
+      \mathcal{V}^\star = \mathcal{V} \, \left(N^{1/2} + 0.155 + \frac{0.24}{N^{1/2}}\right)
+\end{equation}
+in which,
+\begin{equation}
+      \mathcal{V} = D^{+} + D^{-}
+\end{equation}
+is the unmodified Kuiper statistic where,
+\begin{eqnarray}
+      D^{+} &=& \textrm{max}\left(\frac{i}{N} - X_i\right) \\
+      D^{-} &=& \textrm{max}\left(X_i - \frac{i-1}{N}\right) \, ,
+\end{eqnarray}
+where we have $i = 1, ..., N$, with $N$ the number of recoils. The modification factor allows the distribution of the Kuiper statistic to be independent of the sample size for $N\geq8$. There is no analytic form for this distribution in the null case but there are published critical values \cite{fisher1987statistical}. In our case it is sufficient to generate the distribution with a Monte Carlo simulation using any set of vectors with rotational symmetry.

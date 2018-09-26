@@ -1,0 +1,70 @@
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces SPARC galaxy rotation curves}}{3}{figure.caption.15}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Three strategies for detecting dark matter}}{17}{figure.caption.38}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Fluorine and xenon form factors}}{35}{figure.caption.78}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Diagram of the components of the lab velocity}}{38}{figure.caption.86}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Annual and daily modulation signal}}{40}{figure.caption.89}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Benchmark velocity distributions and corresponding event rates}}{46}{figure.caption.101}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Current SI and SD WIMP exclusion limits}}{51}{figure.caption.107}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Diagram showing the geometry of the Radon transform}}{58}{figure.caption.121}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Directional recoil skymaps for three WIMP masses}}{59}{figure.caption.126}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Diagram of a low pressure gas TPC}}{61}{figure.caption.128}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Directional recoil skymaps for the SHM+Stream model}}{65}{figure.caption.131}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Simulated data for the SHM and SHM+Stream models}}{67}{figure.caption.134}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Distributions of statistics for varying stream densities}}{68}{figure.caption.139}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Results of non-parametric tests as a function of input parameters}}{69}{figure.caption.140}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Non-parametric tests as a function of stream velocity}}{71}{figure.caption.141}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Triangle plot for reconstructed parameters of the SHM+Str model}}{75}{figure.caption.147}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Profile likelihood test significance as a function of stream angle}}{77}{figure.caption.153}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Number of stream recoils as a function of stream velocity}}{77}{figure.caption.154}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Reconstructed confidence intervals for WIMP mass and cross section}}{84}{figure.caption.163}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Reconstructed binned velocity distributions}}{85}{figure.caption.165}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {{\bf SHM:} Directionality in F only.}}}{85}{figure.caption.165}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {{\bf SHM:} Directionality in F and Xe.}}}{85}{figure.caption.165}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {{\bf SHM+Str:} Directionality in F and Xe.}}}{85}{figure.caption.165}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {{\bf SHM+DF:} Directionality in F and Xe.}}}{85}{figure.caption.165}
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Reconstructed parallel and transverse velocities for each halo model}}{89}{figure.caption.175}
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Reconstructed parallel and transverse velocities with folded data}}{91}{figure.caption.178}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Fluxes for neutrino backgrounds}}{97}{figure.caption.185}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Atmospheric neutrino directionality}}{101}{figure.caption.191}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Neutrino and $m_{\chi } = 6 \tmspace +\thinmuskip {.1667em} {\rm GeV}$ WIMP nuclear recoil rates}}{105}{figure.caption.207}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces The evolution of the position of the Sun and Cygnus in the sky}}{106}{figure.caption.208}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Mollweide projections of the WIMP and $^8$B neutrino event rates}}{107}{figure.caption.209}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces The complete SI xenon neutrino floor}}{110}{figure.caption.215}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Effect of the flux uncertainty on the neutrino floor}}{111}{figure.caption.217}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Effect of astrophysical uncertainties on WIMP recoil spectra}}{113}{figure.caption.220}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Neutrino floor with different values of input escape velocity}}{114}{figure.caption.221}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Neutrino floor with different values of input circular velocity $v_0$}}{115}{figure.caption.222}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Neutrino floor with different input speed distributions}}{116}{figure.caption.223}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Neutrino floor with the inclusion of astrophysical uncertainties}}{117}{figure.caption.224}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Neutrino floor for a realistic detector}}{119}{figure.caption.226}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Parameters reconstruction under the neutrino background}}{120}{figure.caption.228}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Neutrino floor evolution with timing information}}{122}{figure.caption.231}
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Daily evolution of recoils from ${}^{8}\rm {B}$ neutrinos and WIMPs}}{125}{figure.caption.236}
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Neutrino floor vs detector mass for different readout strategies}}{126}{figure.caption.237}
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Comparison of discovery limits with different readout strategies}}{128}{figure.caption.239}
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Neutrino floor as a function of head-tail discrimination threshold}}{129}{figure.caption.242}
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Neutrino floor for directional detectors with no sense recognition}}{130}{figure.caption.243}
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Neutrino floor vs detector mass with no sense recognition}}{131}{figure.caption.244}
+\contentsline {figure}{\numberline {4.22}{\ignorespaces The discovery limit as a function of angular resolution}}{133}{figure.caption.248}
+\contentsline {figure}{\numberline {4.23}{\ignorespaces Neutrino floor as a function of angular resolution}}{134}{figure.caption.249}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Constraints on the ALP-photon coupling}}{145}{figure.caption.270}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Example simulated axion power spectra as a function of time}}{155}{figure.caption.298}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Reconstructed axion mass, coupling and astrophysical parameters}}{159}{figure.caption.305}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Reconstructed lab velocity components}}{160}{figure.caption.306}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Multiple reconstructed axion parameters}}{161}{figure.caption.307}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces VL2 lab frame speed distributions}}{163}{figure.caption.309}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces VL2 axion conversion power spectra}}{164}{figure.caption.310}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Measuring axion stream velocity}}{165}{figure.caption.312}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Simulated signal from miniclusters}}{170}{figure.caption.319}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }

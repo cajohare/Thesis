@@ -1,0 +1,22 @@
+\chapter{Solar position}\label{app:solar}
+\lhead{\emph{Appendix: Solar position}}
+The directional coherent neutrino-nucleus scattering rate will point back towards the position of the Sun. So for simulating the expected signal in directional detection experiments and projecting future discovery limits we need to know this direction at a given time. The computation of the Solar vector is well studied, detailed determinations of the various angles can be found in, for example, Refs.~\cite{Jenkins:2008sp,BlancoMuriel2001431}. Here we describe only the steps necessary to compute the laboratory frame vector pointing towards the Sun, $\hat{\textbf{q}}_\odot$. The calculation is slightly simpler than for astronomical or Solar energy purposes since for neutrinos we do not need to consider refraction due to the Earth's atmosphere.
+
+As with the lab velocity we express the time in days since 1st January 2000 00:00 UT, $d~=~{\rm JD}~-~2451545.0$. Then we need the ecliptic longitude of the Sun which is equivalent to the position of the Earth in its orbit and is given by,
+\begin{equation}
+ \ell = L + 2 e \sin{g} + \frac{5}{4} e^2 \sin{2g} + \frac{1}{12}e^3\left(13 \sin{3g} - 3 \sin{g} \right) + \mathcal{O}(e^4)\, ,
+\end{equation}
+where $L$ and $g$ are the mean longitude and anomaly of the Earth, defined in Eq.~(\ref{eq:earthorbit}). Note that in this formula we use the eccentricity in degrees, $e = 0^\circ.9574$.
+
+The ecliptic is tilted away from the celestial equator by the same angle as the tilt of the rotation axis of the Earth, also known as the angle of obliquity, $\epsilon = 23.44^\circ$. 
+We can use this angle to convert the ecliptic position of the Sun at a particular time, $\ell$, into a position on the sky. We first find the celestial co-ordinates in the equatorial system, i.e. the right ascension, $\alpha$, and declination, $\delta$,
+\begin{eqnarray}
+ \delta &=& \tan^{-1}{\left(\frac{\cos{\epsilon}\sin{\ell}}{\cos{\ell}}\right)}\, , \\
+ \alpha &=& \sin^{-1}{\left(\sin{\epsilon}\sin{\ell}\right)} \, ,
+\end{eqnarray}
+Note that the right ascension angle must be in the range $(0, 2\pi)$. We then convert these co-ordinates into a vector that points towards the same point in the equatorial co-ordinate system using 
+\begin{equation}
+ \hat{\textbf{q}}_\odot = \begin{pmatrix}  \cos{\delta} \cos{\alpha} \\ \cos{\delta}\sin{\alpha} \\ \sin{\delta} \end{pmatrix} \, .
+\end{equation}
+Then finally we rotate this vector into the North-West-Zenith laboratory frame using the matrix $A_{e\rightarrow {\rm lab}}$ from Eq.~(\ref{eq:eqt2lab}). Recall that this transformation is a function of both time and the detector location on Earth. If the the position of the Sun is displayed at the same time in daily intervals it should trace out a figure-of-eight pattern known as an analemma (see Fig.~\ref{fig:solarcygnus}).
+

@@ -1,0 +1,72 @@
+\chapter{Laboratory velocity}\label{app:labvelocity}
+\lhead{\emph{Appendix: Laboratory velocity}}
+Here we detail the calculation of the laboratory velocity $\textbf{v}_\textrm{lab}$. The variation in $v_\textrm{lab}$ gives rise to the annual and diurnal modulation effects, but for calculating the directional event rate we also require its three components in some coordinate system. In Chapter~\ref{chapter:directional} we use the Galactic coordinate system for simplicity as the results we present there are largely insensitive to our choice of frame. In Chapter~\ref{chapter:nufloor} however we move to a detector frame coordinate system when we compare the directionality of recoils from Galactic dark matter but also Solar neutrinos under a range of readout strategies. 
+
+The Galactic coordinate system $(\hat{\textbf{x}}_g,\hat{\textbf{y}}_g,\hat{\textbf{z}}_g)$ is defined such that $\hat{\textbf{x}}_g$ points towards the Galactic center, $\hat{\textbf{y}}_g$ points in the plane of the Galaxy towards the direction of Galactic rotation and $\hat{\textbf{z}}_g$ points towards the Galactic North pole. We define the Laboratory coordinate system with axes, $(\hat{\textbf{x}}_\textrm{lab},\hat{\textbf{y}}_\textrm{lab},\hat{\textbf{z}}_\textrm{lab})$, pointing towards the North, West and zenith respectively. To move between these coordinate systems we require the geocentric equatorial frame as an intermediate step: $(\hat{\textbf{x}}_e,\hat{\textbf{y}}_e,\hat{\textbf{z}}_e)$, where $\hat{\textbf{x}}_e$ and $\hat{\textbf{y}}_e$ point towards the celestial equator with right ascensions of 0 and 90$^\circ$ respectively and $\hat{\textbf{z}}_e$ points to the celestial North pole.
+
+We transform vectors from the Galactic to the laboratory frame with the following transformation,
+\begin{equation}
+ \begin{pmatrix}\hat{\textbf{x}}_\textrm{lab}\\\hat{\textbf{y}}_\textrm{lab}\\\hat{\textbf{z}}_\textrm{lab}\end{pmatrix} = \textbf{A}_{e\rightarrow\textrm{lab}}\left(\textbf{A}_{g\rightarrow e} \begin{pmatrix}\hat{\textbf{x}}_g\\\hat{\textbf{y}}_g\\\hat{\textbf{z}}_g\end{pmatrix} \right) \, ,
+\end{equation}
+where the transformation from the Galactic to equatorial system is given by the matrix,
+\begin{equation}
+ \textbf{A}_{g\rightarrow e} =
+\begin{pmatrix}
+-0.05487556 & +0.49410943 & -0.86766615 \\
+-0.87343709 & -0.44482963 & -0.19807637 \\
+-0.48383502 & +0.74698225 & +0.45598378
+\end{pmatrix}  \, ,
+\end{equation}
+where the matrix elements have been computed assuming the International Celestial Reference System convention for the right ascension and declination of the North Galactic pole, $(\alpha_{\rm GP},\delta_{\rm GP}) = (192^\circ.85948,\,+27^\circ.12825)$ as well as the longitude of the North celestial pole $l_{\rm CP} = 122^\circ.932$~\cite{BinneyGalacticAstronomy}. Then, from the equatorial to the laboratory frame we use the matrix,
+\begin{equation}\label{eq:eqt2lab}
+ \textbf{A}_{e\rightarrow \textrm{lab}}  = 
+\begin{pmatrix}
+ -\sin(\lambda_\textrm{lab})\cos(t^\circ_\textrm{lab}) & -\sin(\lambda_\textrm{lab})\sin(t^\circ_\textrm{lab}) & \cos(\lambda_\textrm{lab}) \\
+ \sin(t^\circ_\textrm{lab}) & -\cos(t^\circ_\textrm{lab}) & 0\\
+ \cos(\lambda_\textrm{lab})\cos(t^\circ_\textrm{lab}) & \cos(\lambda_\textrm{lab})\sin(t^\circ_\textrm{lab}) & \sin(\lambda_\textrm{lab})
+\end{pmatrix} \, .
+\end{equation}
+In which we have used $\lambda_\textrm{lab}$ for the Earth latitude of the laboratory and $t^\circ_\textrm{lab}$ is the Local Apparent Sidereal Time expressed in degrees, which is related to the Julian day (JD) by the following,
+\begin{equation}
+ t^\circ_\textrm{lab} = \phi_\textrm{lab} + \bigg[101.0308
+		+ 36000.770\left(\frac{\floor{\textrm{JD} - 2400000.5}-55197.5}{36525.0}\right)
+		+ 15.04107 \, \textrm{UT}\bigg] \, , \nonumber
+\end{equation}
+where $\phi_\textrm{lab}$ is the longitude of the laboratory location. We must also convert the Julian day to Universal Time (UT) using,
+\begin{equation}
+ \textrm{UT} = 24\,\bigg(\textrm{JD}+0.5-\floor{JD+0.5}\bigg) \, .
+\end{equation}
+
+The lab velocity is given by,
+\begin{equation}
+\textbf{v}_\textrm{lab}(t) = {\bf v}_{\rm GalRot} + {\bf v}_\odot + {\bf v}_{\rm EarthRev}(t) + {\bf v}_{\rm EarthRot}(t) \, .
+\end{equation}
+The galactic rotation velocity and Solar peculiar velocity are both defined in Galactic coordinates. The Earth revolution velocity we can also calculate {\it in Galactic coordinates} with \cite{McCabe:2013kea},
+\begin{equation}
+\textbf{v}_\textrm{\rm EarthRev}(t) = 29.8 {\rm \, km \, s}^{-1} \, \begin{pmatrix} \cos{\beta_1} \\ \cos{\beta_2} \\ \cos{\beta_3} \end{pmatrix} \cdot
+\begin{pmatrix}
+\sin{(L-\lambda_1)} + e\sin{(L+g-\lambda_1)}\\
+\sin{(L-\lambda_2)} + e\sin{(L+g-\lambda_2)}\\
+\sin{(L-\lambda_3)} + e\sin{(L+g-\lambda_3)}
+\end{pmatrix} \, ,
+\end{equation}
+where $e = 0.01671$ is the orbital eccentricity. The angles $L$ and $g$ are used to describe the position of Earth around its orbit. Both are related to the true anomaly which is the angle around the ellipse measured from the perihelion (which occurs around January), but are constructed to account for the fact that this angle does not increase linearly with time. They are,
+\begin{eqnarray}\label{eq:earthorbit}
+L &=& 280^\circ .460 +  0.9856474 \, d \,  \\
+g &=& 357^\circ .528 + 0.9856003 \, d \, ,
+\end{eqnarray}
+called the mean longitude and mean anomaly respectively. We express the time of observation here in terms of $d$ which is the number of days from 1st January 2000 00:00 UT, i.e. $d = {\rm JD} - 2451545.0$. The sets of three angles, $\beta_{1,2,3}$ and $\lambda_{1,2,3}$ are related to the orientation of the Galactic axes relative to the ecliptic. They are (in degrees),
+\begin{equation}
+\begin{pmatrix} \beta_1 \\ \beta_2 \\ \beta_3 \end{pmatrix} = \begin{pmatrix}5^\circ.538\\-59^\circ.574\\-29^\circ.811\end{pmatrix} +
+\frac{d}{36525}\begin{pmatrix}0^\circ.013\\0^\circ.002\\0^\circ.001\end{pmatrix},
+\end{equation}
+and
+\begin{equation}
+\begin{pmatrix} \lambda_1 \\ \lambda_2 \\ \lambda_3 \end{pmatrix} = \begin{pmatrix}266^\circ.840\\347^\circ.340\\180^\circ.023\end{pmatrix} +
+\frac{d}{36525}\begin{pmatrix}1^\circ.397\\1^\circ.375\\1^\circ.404\end{pmatrix} .
+\end{equation}
+Finally we need the rotational velocity of the Earth which can be written {\it in laboratory coordinates} as,
+\begin{equation}
+\textbf{v}_\textrm{EarthRot} = -0.465102 {\rm \, km \, s}^{-1} \cos{\lambda_{\rm lab}} \begin{pmatrix}0\\1\\0\end{pmatrix} \, ,
+\end{equation}
+which picks up a time dependence if transformed into other frames.
